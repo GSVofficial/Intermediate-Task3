@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brand Profile Card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBlue: '#1E40AF',
+            brandAccent: '#FBBF24',
+          },
+          fontFamily: {
+            brand: ['"Segoe UI"', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-gray-100 font-brand p-6">
+  <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+    <div class="bg-brandBlue p-6 text-white">
+      <h2 class="text-2xl font-bold">Venu</h2>
+      <p class="text-sm opacity-80">Front-end Developer</p>
+    </div>
+    <div class="p-6 space-y-3">
+      <p class="text-gray-700">
+        Passionate about Web Designing with responsive and attractive.
+      </p>
+      <a href="Portfolio/index.html" class="inline-block text-white bg-brandAccent px-4 py-2 rounded hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brandAccent transition">
+        View Portfolio
+      </a>
+    </div>
+  </div>
+</body>
+</html>
